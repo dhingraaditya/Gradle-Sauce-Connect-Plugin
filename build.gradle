@@ -5,7 +5,7 @@ buildscript {
     }
   }
   dependencies {
-    classpath "com.gradle.publish:plugin-publish-plugin:0.9.7"
+    classpath "com.gradle.publish:plugin-publish-plugin:latest.release"
   }
 }
 
@@ -21,18 +21,18 @@ dependencies {
     compile localGroovy()
 }
 
-version = "0.0.14"
-group = "SauceConnectPlugin"
+version = "0.0.15"
+group = "SCPlugin"
 
 pluginBundle {
-  website = "https://github.com/aginteractive/Gradle-Sauce-Connect-Plugin"
-  vcsUrl = "https://github.com/aginteractive/Gradle-Sauce-Connect-Plugin.git"
-  description = "Official release of SauceConnectPlugin"
+  website = "https://github.com/dhingraaditya/Gradle-Sauce-Connect-Plugin"
+  vcsUrl = "https://github.com/dhingraaditya/Gradle-Sauce-Connect-Plugin.git"
+  description = "Un-Official release of SauceConnectPlugin"
   tags = ['SauceLabs', 'SauceConnect']
 
   plugins {
     SauceConnectPlugin {
-      id = "com.saucelabs.SauceConnectPlugin"
+      id = "com.aditya.SauceConnectPlugin"
       displayName = "Sauce Connect Plugin"
     }
   }
